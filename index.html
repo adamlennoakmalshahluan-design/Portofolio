@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio Adam Lenno Akmal Shahluan — Mahasiswa Teknologi Informasi Universitas Brawijaya. UI/UX Designer, Web Developer, dan Project Manager." />
+  <meta name="keywords" content="Adam Lenno, portfolio, UI/UX, web developer, teknologi informasi, universitas brawijaya" />
+  <meta name="author" content="Adam Lenno Akmal Shahluan" />
+  <meta property="og:title" content="Adam Lenno — Creative Digital Portfolio" />
+  <meta property="og:description" content="UI/UX Designer & Web Developer | Mahasiswa Teknologi Informasi, Universitas Brawijaya" />
+  <meta property="og:type" content="website" />
+  <title>Adam Lenno — Creative Digital Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== LOADER ========== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <span class="loader-text" data-text="AL">AL</span>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- ========== CURSOR ========== -->
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-follower" class="cursor-follower"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo-link">
+        <div class="nav-avatar">
+          <img src="profile.jpg" alt="Adam Lenno" class="nav-avatar-photo" />
+        </div>
+        <span class="logo-text">Adam Lenno</span>
+        <span class="logo-dot"></span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active" id="nav-home">Home</a>
+        <a href="#about" class="nav-link" id="nav-about">Tentang</a>
+        <a href="#skills" class="nav-link" id="nav-skills">Keahlian</a>
+        <a href="#education" class="nav-link" id="nav-education">Pendidikan</a>
+        <a href="#projects" class="nav-link" id="nav-projects">Proyek</a>
+        <a href="#contact" class="nav-link" id="nav-contact">Kontak</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" id="hero-badge">
+        <span class="badge-dot"></span>
+        Tersedia untuk Kolaborasi
+      </div>
+      <h1 class="hero-title" id="hero-title">
+        <span class="title-line">Halo, Saya</span>
+        <span class="title-name glitch" data-text="Adam Lenno">Adam Lenno</span>
+        <span class="title-sub glitch-sub" data-text="Akmal Shahluan">Akmal Shahluan</span>
+      </h1>
+      <p class="hero-subtitle" id="hero-subtitle">
+        <span class="typed-text" id="typed"></span><span class="typed-cursor">|</span>
+      </p>
+      <p class="hero-desc" id="hero-desc">
+        Mahasiswa Teknologi Informasi yang passionate dalam menciptakan pengalaman digital yang indah, fungsional, dan bermakna.
+      </p>
+      <div class="hero-cta" id="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="btn-projects">Lihat Proyek</a>
+        <a href="#contact" class="btn btn-outline" id="btn-contact">Hubungi Saya</a>
+      </div>
+      <div class="hero-scroll" id="hero-scroll">
+        <div class="scroll-indicator">
+          <div class="scroll-dot"></div>
+        </div>
+        <span>Scroll ke bawah</span>
+      </div>
+    </div>
+    <div class="hero-visual" id="hero-visual">
+      <div class="avatar-container">
+        <div class="avatar-ring ring-1"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="avatar-ring ring-3"></div>
+        <div class="avatar-core">
+          <img src="profile.jpg" alt="Adam Lenno Akmal Shahluan" class="avatar-photo" />
+        </div>
+        <div class="avatar-badge-float badge-ux">UI/UX</div>
+        <div class="avatar-badge-float badge-dev">Web Dev</div>
+        <div class="avatar-badge-float badge-pm">PM</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card" id="stat-1">
+          <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Keahlian Aktif</span>
+        </div>
+        <div class="stat-card" id="stat-2">
+          <span class="stat-number" data-target="3">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Tahun Belajar Coding</span>
+        </div>
+        <div class="stat-card" id="stat-3">
+          <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Proyek Selesai</span>
+        </div>
+        <div class="stat-card" id="stat-4">
+          <span class="stat-number" data-target="19">0</span><span class="stat-suffix"> thn</span>
+          <span class="stat-label">Usia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Siapa Saya</span>
+        <h2 class="section-title">Tentang <span class="gradient-text">Saya</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual" id="about-visual">
+          <div class="about-card-main">
+            <img src="profile.jpg" alt="Adam Lenno Akmal Shahluan" class="about-avatar-photo" />
+            <div class="about-info">
+              <h3>Adam Lenno Akmal Shahluan</h3>
+              <p>Kediri, 24 Maret 2007</p>
+              <div class="about-tags">
+                <span class="tag">🎨 Designer</span>
+                <span class="tag">💻 Developer</span>
+                <span class="tag">🎬 Filmmaker</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-card-float float-1">
+            <span class="float-icon">🏛️</span>
+            <span>Universitas Brawijaya</span>
+          </div>
+          <div class="about-card-float float-2">
+            <span class="float-icon">📍</span>
+            <span>Kediri, Jawa Timur</span>
+          </div>
+        </div>
+        <div class="about-content" id="about-content">
+          <div class="about-text">
+            <p class="about-lead">
+              Perkenalkan, saya <strong>Adam Lenno Akmal Shahluan</strong> — seorang kreator digital muda yang lahir di Kediri pada 24 Maret 2007 dan kini tengah menapaki perjalanan akademis di <strong>Universitas Brawijaya</strong>, Fakultas Ilmu Komputer, Program Studi Teknologi Informasi.
+            </p>
+            <p>
+              Dengan latar belakang pendidikan yang solid — dimulai dari SDN Bendogerit 1 Blitar, SMPN 6 Blitar, hingga SMAN 1 Blitar — saya tumbuh menjadi individu yang tidak hanya mencintai teknologi, tetapi juga seni dan kreativitas dalam segala bentuknya.
+            </p>
+            <p>
+              Saya percaya bahwa teknologi yang baik bukan sekadar yang bekerja dengan benar, melainkan yang mampu <em>menyentuh dan menginspirasi penggunanya</em>. Itulah filosofi yang selalu saya pegang dalam setiap proyek yang saya kerjakan.
+            </p>
+          </div>
+          <div class="about-values">
+            <div class="value-item" id="value-1">
+              <div class="value-icon">🎯</div>
+              <div>
+                <h4>Berorientasi Solusi</h4>
+                <p>Setiap masalah adalah kesempatan untuk menciptakan sesuatu yang lebih baik</p>
+              </div>
+            </div>
+            <div class="value-item" id="value-2">
+              <div class="value-icon">🚀</div>
+              <div>
+                <h4>Terus Berkembang</h4>
+                <p>Belajar tanpa henti adalah kunci untuk tetap relevan di era digital</p>
+              </div>
+            </div>
+            <div class="value-item" id="value-3">
+              <div class="value-icon">🤝</div>
+              <div>
+                <h4>Kolaborasi</h4>
+                <p>Karya terbaik lahir dari tim yang solid dan komunikasi yang efektif</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Apa yang Saya Bisa</span>
+        <h2 class="section-title">Keahlian & <span class="gradient-text">Kompetensi</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card" id="skill-uiux">
+          <div class="skill-icon-wrap" style="--clr: #a78bfa">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
+            </svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Merancang antarmuka yang intuitif dan pengalaman pengguna yang menyenangkan menggunakan Figma, Adobe XD, dan prinsip design thinking.</p>
+          <div class="skill-tools">
+            <span>Figma</span><span>Adobe XD</span><span>Prototyping</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="88">
+              <div class="skill-bar-fill" style="--clr: #a78bfa"></div>
+            </div>
+            <span class="skill-pct">88%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" id="skill-webdev">
+          <div class="skill-icon-wrap" style="--clr: #34d399">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Membangun website modern yang responsif, cepat, dan accessible menggunakan teknologi terkini dari front-end hingga back-end.</p>
+          <div class="skill-tools">
+            <span>HTML/CSS</span><span>JavaScript</span><span>React</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="82">
+              <div class="skill-bar-fill" style="--clr: #34d399"></div>
+            </div>
+            <span class="skill-pct">82%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" id="skill-pm">
+          <div class="skill-icon-wrap" style="--clr: #fb923c">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/><path d="M8 14h4M8 18h8"/>
+            </svg>
+          </div>
+          <h3>Manajemen Proyek</h3>
+          <p>Mengelola tim dan proyek secara efisien dengan metodologi Agile, memastikan setiap deliverable selesai tepat waktu dan sesuai standar.</p>
+          <div class="skill-tools">
+            <span>Agile/Scrum</span><span>Trello</span><span>Notion</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="80">
+              <div class="skill-bar-fill" style="--clr: #fb923c"></div>
+            </div>
+            <span class="skill-pct">80%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" id="skill-film">
+          <div class="skill-icon-wrap" style="--clr: #f472b6">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3l-4 4-4-4"/><circle cx="12" cy="14" r="3"/><path d="M2 11h20"/>
+            </svg>
+          </div>
+          <h3>Film & Videografi</h3>
+          <p>Mengabadikan momen dan menceritakan kisah yang kuat melalui lensa kamera, dengan keahlian editing dan storytelling visual yang memikat.</p>
+          <div class="skill-tools">
+            <span>Premiere Pro</span><span>After Effects</span><span>DaVinci</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="78">
+              <div class="skill-bar-fill" style="--clr: #f472b6"></div>
+            </div>
+            <span class="skill-pct">78%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" id="skill-fnb">
+          <div class="skill-icon-wrap" style="--clr: #facc15">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>
+            </svg>
+          </div>
+          <h3>Food & Beverage</h3>
+          <p>Memiliki passion dan pengetahuan mendalam dalam industri F&B, dari konsep bisnis kuliner hingga pengalaman pelanggan yang berkesan.</p>
+          <div class="skill-tools">
+            <span>Manajemen Bisnis</span><span>Branding</span><span>Customer Exp</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="75">
+              <div class="skill-bar-fill" style="--clr: #facc15"></div>
+            </div>
+            <span class="skill-pct">75%</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="education-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Perjalanan Akademis</span>
+        <h2 class="section-title">Riwayat <span class="gradient-text">Pendidikan</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline" id="timeline">
+
+        <div class="timeline-item active" id="edu-1">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-badge">2025 – Sekarang</div>
+            <div class="timeline-icon">🏛️</div>
+            <h3>Universitas Brawijaya</h3>
+            <h4>S1 Teknologi Informasi — Fakultas Ilmu Komputer</h4>
+            <p>Menempuh pendidikan sarjana di salah satu universitas terbaik Indonesia. Fokus pada pengembangan sistem informasi, rekayasa perangkat lunak, dan desain interaksi manusia-komputer.</p>
+            <div class="timeline-tags">
+              <span>Teknologi Informasi</span>
+              <span>Malang</span>
+              <span>Aktif</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="edu-2">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-badge">2022 – 2025</div>
+            <div class="timeline-icon">🎓</div>
+            <h3>SMAN 1 Blitar</h3>
+            <h4>Sekolah Menengah Atas Negeri</h4>
+            <p>Menyelesaikan pendidikan SMA di sekolah favorit kota Blitar. Aktif dalam berbagai kegiatan ekstrakurikuler yang mengasah kemampuan kepemimpinan, kreativitas, dan kerja tim.</p>
+            <div class="timeline-tags">
+              <span>Blitar</span>
+              <span>Lulus 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="edu-3">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-badge">2019 – 2022</div>
+            <div class="timeline-icon">📚</div>
+            <h3>SMPN 6 Blitar</h3>
+            <h4>Sekolah Menengah Pertama Negeri</h4>
+            <p>Masa SMP yang membentuk fondasi karakter dan keingintahuan intelektual. Di sinilah minat terhadap teknologi dan desain mulai tumbuh dan berkembang secara organik.</p>
+            <div class="timeline-tags">
+              <span>Blitar</span>
+              <span>Lulus 2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="edu-4">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-badge">2013 – 2019</div>
+            <div class="timeline-icon">🌱</div>
+            <h3>SDN Bendogerit 1 Blitar</h3>
+            <h4>Sekolah Dasar Negeri</h4>
+            <p>Perjalanan dimulai dari sini — tempat pertama kali mengenal huruf, angka, dan impian. Masa kecil yang penuh eksplorasi dan rasa ingin tahu yang besar terhadap dunia di sekitar.</p>
+            <div class="timeline-tags">
+              <span>Blitar</span>
+              <span>Lulus 2019</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Karya Terbaik</span>
+        <h2 class="section-title">Proyek & <span class="gradient-text">Portofolio</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-filter" id="projects-filter">
+        <button class="filter-btn active" data-filter="all" id="filter-all">Semua</button>
+        <button class="filter-btn" data-filter="uiux" id="filter-uiux">UI/UX</button>
+        <button class="filter-btn" data-filter="web" id="filter-web">Web Dev</button>
+        <button class="filter-btn" data-filter="film" id="filter-film">Film</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="project-card" data-category="uiux" id="proj-1">
+          <div class="project-thumbnail" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
+            <span class="proj-emoji">🎨</span>
+            <div class="project-overlay">
+              <span class="overlay-label">UI/UX Design</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">UI/UX</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3>Mobile App — EduTrack</h3>
+            <p>Aplikasi mobile untuk memantau perkembangan belajar mahasiswa dengan dashboard interaktif dan visualisasi data yang intuitif.</p>
+            <div class="project-stack">
+              <span>Figma</span><span>Prototyping</span><span>User Research</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card featured" data-category="web" id="proj-2">
+          <div class="project-thumbnail" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%)">
+            <span class="proj-emoji">🌐</span>
+            <div class="project-overlay">
+              <span class="overlay-label">Web Development</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">Web Dev</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3>Personal Portfolio Website</h3>
+            <p>Website portofolio interaktif dengan animasi modern, dark mode premium, dan desain responsif yang menampilkan karya terbaik secara elegan.</p>
+            <div class="project-stack">
+              <span>HTML/CSS</span><span>JavaScript</span><span>Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="film" id="proj-3">
+          <div class="project-thumbnail" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)">
+            <span class="proj-emoji">🎬</span>
+            <div class="project-overlay">
+              <span class="overlay-label">Film & Video</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">Film</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3>Short Film — "Jejak Digital"</h3>
+            <p>Film pendek yang mengeksplorasi dampak sosial media terhadap kehidupan anak muda masa kini, dikemas dalam sinematografi yang kuat dan emosional.</p>
+            <div class="project-stack">
+              <span>Premiere Pro</span><span>After Effects</span><span>DaVinci</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="uiux" id="proj-4">
+          <div class="project-thumbnail" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)">
+            <span class="proj-emoji">🍽️</span>
+            <div class="project-overlay">
+              <span class="overlay-label">UI/UX + F&B</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">UI/UX</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3>F&B App — NomNom</h3>
+            <p>Desain aplikasi pemesanan makanan dengan UX yang disederhanakan, memfokuskan pada kecepatan pemesanan dan kepuasan pengguna.</p>
+            <div class="project-stack">
+              <span>Figma</span><span>User Flow</span><span>Wireframe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web" id="proj-5">
+          <div class="project-thumbnail" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%)">
+            <span class="proj-emoji">📊</span>
+            <div class="project-overlay">
+              <span class="overlay-label">Web Application</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">Web Dev</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3>Dashboard — Project Manager</h3>
+            <p>Aplikasi web manajemen proyek dengan fitur task tracking, timeline, dan kolaborasi tim secara real-time.</p>
+            <div class="project-stack">
+              <span>JavaScript</span><span>CSS Grid</span><span>LocalStorage</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="film" id="proj-6">
+          <div class="project-thumbnail" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)">
+            <span class="proj-emoji">📸</span>
+            <div class="project-overlay">
+              <span class="overlay-label">Photography</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-cat">Film</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3>Photo Series — "Urban Solitude"</h3>
+            <p>Serial fotografi yang menangkap kesendirian di tengah keramaian kota, menghadirkan cerita visual yang puitis dan kontemplatif.</p>
+            <div class="project-stack">
+              <span>Photography</span><span>Lightroom</span><span>Storytelling</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Mari Terhubung</span>
+        <h2 class="section-title">Hubungi <span class="gradient-text">Saya</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" id="contact-info">
+          <p class="contact-lead">Punya ide menarik, proyek seru, atau sekadar ingin bertukar pikiran? Saya selalu terbuka untuk percakapan baru. Jangan ragu untuk menghubungi saya!</p>
+          <div class="contact-links">
+
+            <a href="mailto:adamlennoakmalshahluan@gmail.com" class="contact-link" id="link-email" target="_blank" rel="noopener">
+              <div class="contact-link-icon" style="--clr: #ea4335">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="contact-link-info">
+                <span class="link-label">Email</span>
+                <span class="link-value">adamlennoakmalshahluan@gmail.com</span>
+              </div>
+              <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/adam-lenno-akmal-shahluan-824313378" class="contact-link" id="link-linkedin" target="_blank" rel="noopener">
+              <div class="contact-link-icon" style="--clr: #0a66c2">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/>
+                </svg>
+              </div>
+              <div class="contact-link-info">
+                <span class="link-label">LinkedIn</span>
+                <span class="link-value">adam-lenno-akmal-shahluan</span>
+              </div>
+              <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+
+            <a href="https://github.com/adamlennoakmalshahluan-design" class="contact-link" id="link-github" target="_blank" rel="noopener">
+              <div class="contact-link-icon" style="--clr: #8b949e">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </div>
+              <div class="contact-link-info">
+                <span class="link-label">GitHub</span>
+                <span class="link-value">adamlennoakmalshahluan-design</span>
+              </div>
+              <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+
+            <a href="https://www.instagram.com/aadlenn/" class="contact-link" id="link-instagram" target="_blank" rel="noopener">
+              <div class="contact-link-icon" style="--clr: #e1306c">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+                </svg>
+              </div>
+              <div class="contact-link-info">
+                <span class="link-label">Instagram</span>
+                <span class="link-value">@aadlenn</span>
+              </div>
+              <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="form-name">Nama Lengkap</label>
+            <input type="text" id="form-name" name="name" placeholder="Masukkan nama Anda" required />
+          </div>
+          <div class="form-group">
+            <label for="form-email">Alamat Email</label>
+            <input type="email" id="form-email" name="email" placeholder="nama@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="form-subject">Subjek</label>
+            <input type="text" id="form-subject" name="subject" placeholder="Topik pesan Anda" />
+          </div>
+          <div class="form-group">
+            <label for="form-message">Pesan</label>
+            <textarea id="form-message" name="message" rows="5" placeholder="Ceritakan ide atau proyek Anda..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="btn-send">
+            <span>Kirim Pesan</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-success" id="form-success">
+            <span>✅ Pesan terkirim! Terima kasih, saya akan segera merespons.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="profile.jpg" alt="Adam Lenno" class="footer-logo-photo" />
+          </div>
+          <p>Adam Lenno Akmal Shahluan<br/><small>Teknologi Informasi — Universitas Brawijaya</small></p>
+        </div>
+        <div class="footer-socials">
+          <a href="mailto:adamlennoakmalshahluan@gmail.com" class="social-btn" id="footer-email" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/adam-lenno-akmal-shahluan-824313378" class="social-btn" id="footer-linkedin" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/adamlennoakmalshahluan-design" class="social-btn" id="footer-github" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/aadlenn/" class="social-btn" id="footer-instagram" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Adam Lenno Akmal Shahluan. Dibuat dengan ❤️ dan ☕</p>
+        <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
